@@ -99,7 +99,8 @@ const ShipmentsList: React.FC<ChildComponentProps> = ({
 
   useEffect((): void => {
     dispatch(fetchShipmentData());
-  }, [dispatch]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <React.Fragment>
